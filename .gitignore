@@ -1,0 +1,14 @@
+# backups
+backups
+
+# config
+conf/*
+!conf/.gitkeep
+
+# data
+data/*
+!data/.gitkeep
+
+# logs
+logs/*
+!logs/.gitkeep

@@ -1,0 +1,23 @@
+version: '3.6'
+
+services:
+  
+  aio:
+    container_name: youtrack
+    image: jetbrains/youtrack:2018.3.47247
+    volumes:
+      - type: "bind"
+        source: "./backups"
+        target: "/opt/youtrack/backups"
+      - type: "bind"
+        source: "./conf"
+        target: "/opt/youtrack/conf"
+      - type: "bind"
+        source: "./data"
+        target: "/opt/youtrack/data"
+      - type: "bind"
+        source: "./logs"
+        target: "/opt/youtrack/logs"
+    ports:
+      - "8880:8080"
+    restart: always
