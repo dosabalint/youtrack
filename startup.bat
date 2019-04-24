@@ -16,7 +16,6 @@ goto :loop
 
 :success
 
-echo Docker is running, starting Youtrack container.
-docker container start youtrack >nul 2>&1
+echo Started Youtrack container.
 
 timeout 5
